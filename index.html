@@ -1,5 +1,6 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <style>
@@ -7,6 +8,7 @@
 
             #main{
                 background-color: #f7f7f5;
+                width: 100%;
             }
 
             .carousel{
@@ -44,18 +46,22 @@
 
             #wlink {
                 color: white;
+                text-decoration: underline;
             }
 
             #wlink:visited {
                 color: white;
+                text-decoration: underline;
             }
 
             #wlink:active {
                 color: white;
+                text-decoration: underline;
             }
 
             #wlink:hover {
                 color: white;
+                text-decoration: underline;
             }
 
             #car{
@@ -91,25 +97,26 @@
             }
 
             #spl {
-                text-align: right;
+                text-align: center;
                 height: 80%;
+                display: inline-block;
             }
 
             #spltxt {
-                text-align: right;
-                font-size: 96px;
-                display: inline-block;
-                padding-top: 0%;
+                text-align: center;
+                font-size: 700%;
+                padding-top: 5%;
                 color: #ffffff;
                 font-family: 'Nunito', sans-serif;
+                padding-right: 0px;
             }
             #spltxtsub {
-                text-align: right;
-                font-size: 36px;
-                display: inline-block;
+                text-align: center;
+                font-size: 300%;
                 padding-top: 0px;
                 color: #ffffff;
                 font-family: 'Nunito', sans-serif;
+                padding-right: 0px;
             }
 
             #cen {
@@ -118,27 +125,46 @@
                 color: white;
                 font-family: 'Nunito', sans-serif;
             }
+
+            .bg {
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                background-image: linear-gradient(#9B7DD1 , #D34B76);
+            }
+
+            #img {
+                display: inline-block;
+            }
+
+            html, body {
+                max-width: 100%;
+                overflow-x: hidden;
+            }
         </style>
+        <title>JJH47E │ Home</title>
     </head>
     <body>
-        <img src="resources/splash.png" width="100%" class="splash">
+        <div class="bg"></div>
         <!--Start of navbar-->
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="navbar">
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <a id="navtext" href="https://jjh47e.github.io">Home</a>
-                    <a id="navtext" href="#">Games</a>
+                    <a id="navtext" href="#">Home</a>
+                    <a id="navtext" href="/games/">Games</a>
                     <a id="navtext" href="https://jjh47e.github.io/about">About</a>
                 </div>
             </div>
         </div>
         <!--End of navbar-->
-        <div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0 col-md-6 col-md-offset-6 col-lg-6 col-lg-offset-6" id="spl">
-            <div id="spltxt">
-                <span style="color:#ef3147">JJH</span><span style="color:#7f96ff">47E</span>
-            </div>
-            <div id="spltxtsub">
-                Check out my games <a href="/games/" id="wlink">here</a>
+        <div class="row">
+            <div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0 col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0" id="spl">
+                <div id="spltxt">
+                    <span style="color:#ef3147">JJH</span><span style="color:#7f96ff">47E</span>
+                </div>
+                <div id="spltxtsub">
+                    Check out my games <a href="/games/" id="wlink">here</a>
+                </div>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="cen">
