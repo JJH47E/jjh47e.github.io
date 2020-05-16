@@ -130,7 +130,7 @@
                 width: 100%;
                 height: 100%;
                 position: fixed;
-                background-image: linear-gradient(#9B7DD1 , #D34B76);
+                background-image: linear-gradient( #9A7FD4, #D34B75);
             }
 
             #img {
@@ -140,6 +140,45 @@
             html, body {
                 max-width: 100%;
                 overflow-x: hidden;
+            }
+
+            .item {
+                width: 100%;
+            }
+
+            #itemimg {
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            #itemtxt {
+                display: inline-block;
+                text-overflow: ellipsis;
+                max-width: 100%;
+            }
+
+            #mid {
+                text-align: center;
+                color: black;
+            }
+
+            .more {
+                color: black;
+            }
+
+            .more:visited {
+                text-align: center;
+                color: black;
+            }
+
+            .more:active {
+                text-align: center;
+                color: black;
+            }
+
+            .more:hover {
+                text-align: center;
+                color: black;
             }
         </style>
         <title>JJH47E │ Home</title>
@@ -172,29 +211,58 @@
             <br>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0" id="main">
-            <br>
-            I make games in Unity. All my games can be played on any browser which supports HTML5
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+            <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+                <br>
+                <span style="font-weight: bold; font-size: 200%; color: black;">Latest Games</span>
+                <br>
+                <br>
+                <!--Begin item display-->
+                <div class="row">
+                    <div class="item">
+                        <div class="col-sm-4 col-xs-4 col-md-3 col-lg-3" id="itemimg">
+                            <a href="games/COA"><img src="resources/coa.png" width="100%"></a>
+                        </div>
+                        <div class="col-sm-8 col-sm-offset-0 col-xs-8 col-xs-offset-0 col-md-9 col-md-offset-0 col-lg-9 col-lg-offset-0" id="itemtxt">
+                            COA is an endless arcade shooter inspried by DOA.
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <!--End item display-->
+                <br>
+                <!--Begin item display-->
+                <div class="row">
+                    <div class="item">
+                        <div class="col-sm-4 col-xs-4 col-md-3 col-lg-3" id="itemimg">
+                            <a href="games/MagnetMania"><img src="resources/magnet.png" width="100%"></a>
+                        </div>
+                        <div class="col-sm-8 col-sm-offset-0 col-xs-8 col-xs-offset-0 col-md-9 col-md-offset-0 col-lg-9 col-lg-offset-0" id="itemtxt">
+                            MagnetMania is Physics Puzzle game where the aim is to get the ball to the finish line by maneuvering objects.
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <!--End item display-->
+                <br>
+                <!--Begin item display-->
+                <div class="row">
+                    <div class="item">
+                        <div class="col-sm-4 col-xs-4 col-md-3 col-lg-3" id="itemimg">
+                            <a href="games/RetroPong"><img src="resources/pong.png" width="100%"></a>
+                        </div>
+                        <div class="col-sm-8 col-sm-offset-0 col-xs-8 col-xs-offset-0 col-md-9 col-md-offset-0 col-lg-9 col-lg-offset-0" id="itemtxt">
+                            RetroPong is a simple remake of the classic game. First to 7 wins!
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <!--End item display-->
+                <br>
+                <div class="row">
+                    <p id="mid"><a href="games" class="more">See More...</a></p>
+                </div>
+                <br>
+            </div>
         </div>
     </body>
 </html>
